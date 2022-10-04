@@ -1,0 +1,12 @@
+export { default as Ecommerce } from './Ecommerce';
+export { default as Jira } from './Jira';
+export { default as Projects } from './Projects';
+export { default as Employees } from './Employees';
+export { default as Editor } from './Editor';
+export { default as Clients } from './Clients';
+export { default as Calendar } from './Calendar';
+export { default as Area } from './Charts/Area';
+export { default as ColorMapping } from './Charts/ColorMapping';
+export { default as Financial } from './Charts/Financial';
+export { default as Line } from './Charts/Line';
+export { default as Pie } from './Charts/Pie';
