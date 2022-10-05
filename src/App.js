@@ -12,8 +12,11 @@ const App = () => {
   return (
     <div>
         <BrowserRouter>
+
+
+        {/*settings icon */}
         <div className='flex relative  dark:bg-main-dark-bg'>
-            <div className='fixed right-4 bottom-4 style={zIndex: "1000"}'>
+            <div className='fixed right-4 bottom-4 style={zIndex: "10000"}'>
                 <TooltipComponent content="Settings" position='Top'>
                     <button type='button' className='text-3xl p-3 text-white' style={{background: "orange", borderRadius: "30%"}}>
                         <FiSettings />
@@ -22,23 +25,24 @@ const App = () => {
                 </TooltipComponent>
 
             </div >
+
+
+
             {/*sidebar styling */}
             {activeMenu ? (
-                <div className='w-72 sidebar dark:bg-secondary-dark-bg  bg-red-500'><Sidebar />
+                <div className='w-72  dark:bg-secondary-dark-bg  bg-red-500'> <Sidebar />
                 </div>
             ) : (
                 <div className='w-0 dark:bg-secondary-dark-bg'><Sidebar/></div>
             )}
             <div className={
                 activeMenu
-                ? 'dark:bg-main-bg  bg-inherit min-h-screen md:ml-72 w-full'
+                ? 'dark:bg-main-bg  bg-white min-h-screen md:ml-0 w-full'
                 : 'bg-main-bg dark:bg-main-dark-bg  w-full min-h-screen flex-2 '
             }>
-                <div className='fixed md:static bg-main-bg dark:bg-main-dark-bg navbar w-full'>
+                <div className='fixed md:static bg-red-500 dark:bg-main-dark-bg navbar w-full'>
                     <Navbar />
                 </div>
-
-            </div>
             <div>
                 <Routes>
                     {/* Dashboard */}
@@ -61,6 +65,7 @@ const App = () => {
 
 
                 </Routes>
+            </div>
             </div>
         </div>
         </BrowserRouter>
