@@ -55,12 +55,12 @@ const App = () => {
                    <Route path='/clients' element={<Clients/>}/> 
 
                    {/* Apps */} 
-                   <Route path='/jira' element={<Jira/>}/> 
+                   <Route path='/tasks' element={<Jira/>}/> 
                    <Route path='/editor' element={<Editor/>}/> 
                    <Route path='/calendar' element={<Calendar/>}/> 
 
-                    {/*Charts  */}
-                   <Route path='/area' element={<Area/>}/> 
+                   {/*Logging in */}
+                   
 
 
 
