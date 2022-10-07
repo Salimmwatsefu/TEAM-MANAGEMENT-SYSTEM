@@ -30,7 +30,7 @@ const App = () => {
 
             {/*sidebar styling */}
             {activeMenu ? (
-                <div className='w-72  dark:bg-secondary-dark-bg  bg-red-500'> <Sidebar />
+                <div className='w-72  dark:bg-secondary-dark-bg  bg-neutral-800'> <Sidebar />
                 </div>
             ) : (
                 <div className='w-0 dark:bg-secondary-dark-bg'><Sidebar/></div>
@@ -40,7 +40,7 @@ const App = () => {
                 ? 'dark:bg-main-bg  bg-white min-h-screen md:ml-0 w-full'
                 : 'bg-main-bg dark:bg-main-dark-bg  w-full min-h-screen flex-2 '
             }>
-                <div className='fixed md:static bg-red-500 dark:bg-main-dark-bg navbar w-full'>
+                <div className='fixed md:static bg-orange-500 dark:bg-main-dark-bg navbar w-full'>
                     <Navbar />
                 </div>
             <div>

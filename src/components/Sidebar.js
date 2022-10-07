@@ -24,13 +24,13 @@ const Sidebar = () => {
      {activeMenu && (<>
       <div className='flex justify-between items-center'>
 
-        <Link to="/" onClick={handleCloseSideBar} className="items-center gap-3 ml-3 mt-4 flex text-xl font-extrabold tracking-tight dark:text-white text-slate-900">
+        <Link to="/" onClick={handleCloseSideBar} className="items-center gap-3 ml-3 mt-4 flex text-xl font-extrabold tracking-tight dark:text-white text-white">
           <SiShopware /> <span>Salim.Co</span>
         </Link>
 
         <TooltipComponent content="Menu" position='BottomCenter'>
 
-          <button type="button" onClick={() => setActiveMenu((prevActiveMenu) => !prevActiveMenu)} className="text-xl rounded-full p-3 hover:bg-light-gray mt-4 block md-hidden">
+          <button type="button" onClick={() => setActiveMenu((prevActiveMenu) => !prevActiveMenu)} className="text-xl rounded-full p-3 hover:bg-orange-500 mt-4 block md-hidden">
             <MdOutlineCancel />
 
           </button>
@@ -41,11 +41,11 @@ const Sidebar = () => {
       <div className='mt-10'>
         {links.map((item) => (
           <div key={item.title}>
-            <p className='text-gray-400 m-3 mt-4 uppercase'>{item.title}</p>
+            <p className='text-white m-3 mt-4 uppercase'>{item.title}</p>
             {item.links.map((link) => (
               <NavLink to={`/${link.name}`} key={link.name} onClick={handleCloseSideBar} className={({isActive}) => isActive ? activeLink : normalLink }>
                 {link.icon}
-                <span className='capitalize'>
+                <span className='capitalize text-white' >
                   {link.name}
                 </span>
 

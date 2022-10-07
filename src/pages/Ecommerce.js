@@ -22,7 +22,7 @@ const Ecommerce = () => {
 
   </div>
   <div className='flex gap-10 flex-wrap justify-center'>
-    <div className='bg-red-500 dark:text-gray-200 dark:bg-secondary-dark-bg mt-5 m-3 p-4 rounded-2xl md:w-780'>
+    <div className='bg-white dark:text-gray-200 dark:bg-secondary-dark-bg mt-5 m-3 p-4 rounded-2xl md:w-780'>
       <div className='flex justify-between'>
         <p className='font-semibold text-xl'>Total Revenue</p>
         <div className='flex items-center gap-4'>
@@ -60,7 +60,7 @@ const Ecommerce = () => {
 
           </div>
           <div className="mt-10">
-            <Button color="white" bgColor="blue" text="Download Report" borderRadius="10px"/>
+            <Button color="white" bgColor="orange" text="Download Report" borderRadius="10px"/>
 
           </div>
 
